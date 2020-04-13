@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Initiative Tracker</title>
+
+	<meta charset="UTF-8">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- Customized style for this page -->
+	<link rel="stylesheet" href="assets/style.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- It's responsive! -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Javascript -->
+	<script src="assets/js/preload.js"></script>
+	<script src="assets/js/utils.js"></script>
+	<script src="assets/js/init.js"></script>
+</head>
+<body onload="init()">
+	<div class="container-fluid">
+		<div id="input">
+			<div class="row">
+				<div class="col-sm-8"><h2>Name:</h2></div>
+				<div class="col-sm-4"><h2>Initiative:</h2></div>
+			</div>	
+		</div>
+		<div id="fightButton">
+			<button type="button" class="btn btn-success" onclick="trackInitative()">Fight!</button>
+		</div>
+		<div id="tracker" class="display">
+			<table style="height:100%; width:100%; text-align: center;">
+				<tr style="height:500px;">
+					<td>
+						<div id="currentname" class="display"></div>
+						<p><div id="currentinit" class="display"></div></p>
+					</td>
+				</tr>
+				<tr style="height:300px;">
+					<td>
+						<div class="display">On deck:</div>
+						<div id="ondeckname" class="display"></div>
+						<div id="ondeckinit" class="display"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button type="button" class="btn btn-success" onclick="displayNextInitiative()">Next</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

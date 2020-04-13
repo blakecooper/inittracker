@@ -1,0 +1,42 @@
+a {
+	color: #000000;
+}
+
+a:link {
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #3ccd47; 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+div {
+	text-align: center;
+}
+
+.display {
+	text-align: center;
+	display: inline;
+}
+
+#currentname {
+	color: #28a745;
+	font-size: 400%;
+}
+
+#currentinit {
+	color: #28a745;
+}
+
+@media screen and (min-width:1000px) {
+
+	#currentname {
+		color: #28a745;
+		font-size: 500%;
+	}
+}
